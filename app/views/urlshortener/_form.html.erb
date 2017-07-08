@@ -1,0 +1,6 @@
+<%= form_tag(urlshortener_index_path, method: "post") do |f| %>
+  <%= label_tag(:longurl, "generate") %>
+  <%= text_field_tag("urlshortener[longurl]") %>
+  <%= submit_tag("Create") %>
+  <!-- <%=link_to @url %> -->
+<% end %>
